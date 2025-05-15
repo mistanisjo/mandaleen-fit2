@@ -33,14 +33,10 @@ export const Navbar = async () => {
           </div>
         </div>
 
-        {session ? (
+        {session && (
           <div className="flex flex-row items-center gap-2">
             <ThemeToggle />
           </div>
-        ) : (
-          <Button className="py-1.5 px-2 h-fit font-normal text-white" asChild>
-            <Link href="/login">Login</Link>
-          </Button>
         )}
       </div>
     </>
