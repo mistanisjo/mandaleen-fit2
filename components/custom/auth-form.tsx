@@ -6,7 +6,7 @@ export function AuthForm({
   children,
   defaultEmail = "",
 }: {
-  action: any;
+  action: (formData: FormData) => void;
   children: React.ReactNode;
   defaultEmail?: string;
 }) {
@@ -17,7 +17,7 @@ export function AuthForm({
           htmlFor="email"
           className="text-zinc-600 font-normal dark:text-zinc-400"
         >
-          Email Address
+          عنوان البريد الإلكتروني
         </Label>
 
         <Input
@@ -25,7 +25,7 @@ export function AuthForm({
           name="email"
           className="bg-muted text-md md:text-sm border-none"
           type="email"
-          placeholder="user@acme.com"
+          placeholder="user@example.com"
           autoComplete="email"
           required
           defaultValue={defaultEmail}
@@ -35,7 +35,7 @@ export function AuthForm({
           htmlFor="password"
           className="text-zinc-600 font-normal dark:text-zinc-400"
         >
-          Password
+          كلمة المرور
         </Label>
 
         <Input
