@@ -4,8 +4,6 @@ import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 import cx from "classnames";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
-
-// Removed direct signOut import, will use signOutAction
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import useSWR from "swr";
